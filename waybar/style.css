@@ -1,0 +1,58 @@
+@import "colors.css";
+
+* {
+    font-family: sans-serif;
+    color: @on_surface;
+}
+
+window#waybar {
+    background: @surface_container;
+    border: none;
+    padding: 0;
+}
+
+/* Tooltip */
+tooltip {
+    background: @surface_variant;
+    border: 1px solid @outline_variant;
+    color: @on_variant;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Bar background */
+#bar {
+    background: @primary;
+    border-bottom: 1px solid @outline;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modules */
+#custom-weather,
+#workspaces,
+#taskbar,
+#custom-rofi,
+#tray,
+#network,
+#pulseaudio,
+#battery,
+#clock,
+#group-power {
+    margin-left: 10px;
+    padding: 0 5px;
+    color: @on_surface;
+    background: @surface_bright;
+    border-radius: 15px;
+}
+
+#taskbar button.active {
+	border-bottom: 3px solid @primary;
+    background: @surface_container;
+}
+
+#taskbar button:hover {
+	border-bottom: 3px solid white;
+    background: @surface_variant;
+	color: @on_primary;
+}
